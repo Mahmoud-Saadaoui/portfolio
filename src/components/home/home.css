@@ -45,7 +45,7 @@
 }
 
 .home_img {
-    background: url(../../../public/assets/profile.jpg);
+    background: url(../../assets/profile.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
