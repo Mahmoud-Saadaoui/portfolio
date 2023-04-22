@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './qualification.css'
+import SectionTitle from '../section-title/SectionTitle'
 
 function Qualification() {
     const [toggleState, setToggleState] = useState(0)
@@ -8,8 +9,10 @@ function Qualification() {
     }
   return (
     <section className='qualification section' id='qualification'>
-      <h2 className="section_title">Qualification</h2>
-      <span className="section_subtitle">My Personel Journey</span>
+      <SectionTitle
+        title = 'Qualification'
+        subtitle = 'My Personel Journey'
+      />
 
       <div className="qualification_container container">
         <div className="qualification_tabs">

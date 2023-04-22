@@ -3,11 +3,16 @@ import './about.css'
 import aboutImg from '../../assets/about.jpg'
 import CV from '../../assets/cv.pdf'
 import Info from './Info'
+import SectionTitle from '../section-title/SectionTitle'
 
 function About() {
   return (
     <section className="about section" id="about">
-        <h2 className="section_title">About Me</h2>
+      <SectionTitle
+        title = 'About Me'
+        subtitle = 'My introduction'
+      />
+
         <div className="about_container container grid">
             <img src={aboutImg} alt="about-img" className="about_img" />
             <div className="about_data">

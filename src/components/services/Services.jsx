@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './services.css'
+import SectionTitle from '../section-title/SectionTitle'
 
 function Services() {
     const [toggleState, setToggleState] = useState(0)
@@ -8,8 +9,10 @@ function Services() {
     }
   return (
     <section className='services section' id='services'>
-      <h2 className="section_title">Services</h2>
-      <span className="section_subtitle">What i offer</span>
+      <SectionTitle
+        title = 'Services'
+        subtitle = 'What i offer'
+      />
 
       <div className="services_container container grid" id="services">
         <div className="service_content">

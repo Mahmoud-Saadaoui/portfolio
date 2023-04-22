@@ -2,12 +2,15 @@ import React from 'react'
 import './skills.css'
 import FrontEnd from './FrontEnd'
 import BackEnd from './BackEnd'
+import SectionTitle from '../section-title/SectionTitle'
 
 function Skills() {
   return (
     <section className='skills section' id='skills'>
-      <h2 className="section_title">Skills</h2>
-      <span className="section_subtitle">My Technical level</span>
+      <SectionTitle
+        title = 'Skills'
+        subtitle = 'My Technical level'
+      />
       <div className="skills_container container grid">
         <FrontEnd/>
         <BackEnd/>
