@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import SectionTitle from '../section-title/SectionTitle'
 import './contact.css'
 import ContactCard from './ContactCard'
@@ -7,8 +8,20 @@ import ContactForm from './ContactForm'
 import Button from './Button'
 
 function Contact() {
-    const input = true
-    const textarea = false
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_fkwbhhd', 
+            'template_3qbcjpe', 
+            form.current, 
+            '1J4LinV20cqicFHGR'
+        )
+        
+        e.target.reset()
+    };
   return (
     <section className='contact section' id='contact'>
       <SectionTitle
@@ -51,7 +64,7 @@ function Contact() {
                 title = 'Write me your project'
             />
 
-            <form className="contact_form">
+            <form ref={form} onSubmit={sendEmail} className="contact_form">
                 
                 <ContactForm 
                     label = 'Name'
@@ -78,7 +91,7 @@ function Contact() {
                 </div>
 
                 <Button/>
-                
+
             </form>
         </div>
       </div>
