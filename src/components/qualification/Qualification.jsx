@@ -1,12 +1,14 @@
 import React, {useState} from 'react'
 import './qualification.css'
 import SectionTitle from '../section-title/SectionTitle'
+import QualificationTabs from './QualificationTabs'
 
 function Qualification() {
-    const [toggleState, setToggleState] = useState(0)
+    const [toggleState, setToggleState] = useState(1)
     const toggleTab = (index) => {
         setToggleState(index)
     }
+
   return (
     <section className='qualification section' id='qualification'>
       <SectionTitle
@@ -15,35 +17,23 @@ function Qualification() {
       />
 
       <div className="qualification_container container">
-        <div className="qualification_tabs">
-            <div 
-            className={toggleState === 1 ? "qualification_button qualification_active button--flex" : "qualification_button button--flex"}
-            onClick={()=>toggleTab(1)}
-            >
-               <i className="uil uil-graduation-cap qualification_icon"></i>
-                Education
-            </div>
-
-            <div 
-            className={toggleState === 2 ? "qualification_button qualification_active button--flex" : "qualification_button button--flex"}
-            onClick={()=>toggleTab(2)}
-            >
-                <i className="uil uil-briefcase-alt qualification_icon"></i>
-                Experience
-            </div>
-        </div>
+        
+        <QualificationTabs
+            toggleTab = {toggleTab}
+            toggleState = {toggleState}
+        />
 
         <div className="qualification_sections">
             <div className={toggleState === 1 ? "qualification_content qualification_content-active" : "qualification_content "}>
                 <div className="qualification_data">
                     <div>
-                        <h3 className="qualification_title">Web Design</h3>
+                        <h3 className="qualification_title">Master in physics chemistry</h3>
                         <span className="qualification_subtitle">
-                            Spain - Institute
+                            Military Academy
                         </span>
                         <div className="qualification_calender">
                             <i className="uil uil-calender-alt"></i>
-                            2021 - Present
+                            2014
                         </div>
                     </div>
 
@@ -62,13 +52,13 @@ function Qualification() {
                     </div>
 
                     <div>
-                        <h3 className="qualification_title">Art Director</h3>
+                        <h3 className="qualification_title">Web Developpement</h3>
                         <span className="qualification_subtitle">
-                            Spain - Institute
+                            Online Studiying
                         </span>
                         <div className="qualification_calender">
                             <i className="uil uil-calender-alt"></i>
-                            2021 - Present
+                            2021 - present
                         </div>
                     </div>
 
@@ -77,13 +67,13 @@ function Qualification() {
             <div className={toggleState === 2 ? "qualification_content qualification_content-active" : "qualification_content "}>
             <div className="qualification_data">
                     <div>
-                        <h3 className="qualification_title">Web Developper</h3>
+                        <h3 className="qualification_title">Commanding Officer</h3>
                         <span className="qualification_subtitle">
-                            Tunisian - Institute
+                            Ministry of Defense
                         </span>
                         <div className="qualification_calender">
                             <i className="uil uil-calender-alt"></i>
-                            2018 - 2021
+                            2019 - 2022
                         </div>
                     </div>
 
@@ -102,13 +92,13 @@ function Qualification() {
                     </div>
 
                     <div>
-                        <h3 className="qualification_title">Manager</h3>
+                        <h3 className="qualification_title">Security Official</h3>
                         <span className="qualification_subtitle">
-                            Spain - Company
+                            Ministry of Defense
                         </span>
                         <div className="qualification_calender">
                             <i className="uil uil-calender-alt"></i>
-                            2021 - Present
+                            2022 - present
                         </div>
                     </div>
 

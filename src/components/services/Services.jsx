@@ -28,29 +28,26 @@ function Services() {
             <div className={toggleState === 1 ? 'services_modal active-modal' : 'services_modal'}>
                 <div className="services_modal-content">
                     <i className="uil uil-times services_modal-close" onClick={()=>toggleTab(0)}></i>
-                    <h3 className="services_modal-title">Product designer</h3>
-                    <p className="services_modal-description">
-                    Service with more than 3 years of experience.Providing quality work to clients and companies.
-                    </p>
+                    <h3 className="services_modal-title">Website designer</h3>
                     <ul className="services_modal-services grid">
                         <li className="services_modal-service">
                             <i className="uil uil-check-circle services_modal-icon"></i>
                             <p className="services_modal-info">
-                            I develop the user interface.
+                            I develop responsive website.
                             </p>
                         </li>
 
                         <li className="services_modal-service">
                             <i className="uil uil-check-circle services_modal-icon"></i>
                             <p className="services_modal-info">
-                            Web page development.
+                            Professional work and customer support.
                             </p>
                         </li>
 
                         <li className="services_modal-service">
                             <i className="uil uil-check-circle services_modal-icon"></i>
                             <p className="services_modal-info">
-                            I position your company brand.
+                            Service that provides the best quality and at the request of the client.
                             </p>
                         </li>
                     </ul>
@@ -73,9 +70,6 @@ function Services() {
                 <div className="services_modal-content">
                     <i className="uil uil-times services_modal-close" onClick={()=>toggleTab(0)}></i>
                     <h3 className="services_modal-title">Visual Designer</h3>
-                    <p className="services_modal-description">
-                    Service with more than 3 years of experience.Providing quality work to clients and companies.
-                    </p>
                     <ul className="services_modal-services grid">
                         <li className="services_modal-service">
                             <i className="uil uil-check-circle services_modal-icon"></i>

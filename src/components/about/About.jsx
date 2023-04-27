@@ -18,7 +18,7 @@ function About() {
             <div className="about_data">
               <Info />
               <p className="about_description">
-                Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.
+              As a javascript developer, I have experience in HTML5 and CSS3 techniques working with Bootstrap and Tailwind or more advanced javascript frameworks such as react
               </p>
               <a download="CV" href={CV} className="button button--flex">
                 Download CV

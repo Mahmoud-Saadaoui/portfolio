@@ -1,9 +1,9 @@
 import React from 'react'
 
-function FrontEnd() {
+function Languages() {
   return (
     <div className='skills_content'>
-        <h3 className="skills_title">Frontend developer</h3>
+        <h3 className="skills_title">Languages</h3>
 
         <div className="skills_box">
             <div className="skills_group">
@@ -35,7 +35,7 @@ function FrontEnd() {
                 </div>
             </div>
 
-            <div className="skills_group">
+            {/* <div className="skills_group">
                 <div className="skills_data">
                     <i className='bx bx-badge-check'></i>
 
@@ -62,11 +62,11 @@ function FrontEnd() {
                         <span className="skills_level">Intermediate</span>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
       
     </div>
   )
 }
 
-export default FrontEnd
+export default Languages

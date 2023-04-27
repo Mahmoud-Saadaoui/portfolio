@@ -1,7 +1,9 @@
 .footer {
     text-align: center;
+    border-top: 1px solid var(--title-color);
+    /* padding: 50px auto auto; */
 }
 
 .footer p {
-    margin-bottom: var(--mb-2);
+    margin: var(--mb-1) auto ;
 }

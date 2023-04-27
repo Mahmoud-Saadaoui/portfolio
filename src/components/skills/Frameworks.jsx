@@ -1,9 +1,9 @@
 import React from 'react'
 
-function BackEnd() {
+function Frameworks() {
   return (
     <div className='skills_content'>
-        <h3 className="skills_title">Backend Developer</h3>
+        <h3 className="skills_title">Frameworks</h3>
 
         <div className="skills_box">
             <div className="skills_group">
@@ -11,7 +11,7 @@ function BackEnd() {
                     <i className='bx bx-badge-check'></i>
 
                     <div>
-                        <h3 className="skills_name">PHP</h3>
+                        <h3 className="skills_name">React js</h3>
                         <span className="skills_level">Intermediate</span>
                     </div>
                 </div>
@@ -20,7 +20,7 @@ function BackEnd() {
                     <i className='bx bx-badge-check'></i>
 
                     <div>
-                        <h3 className="skills_name">Python</h3>
+                        <h3 className="skills_name">Tailwind css</h3>
                         <span className="skills_level">Intermediate</span>
                     </div>
                 </div>
@@ -29,7 +29,7 @@ function BackEnd() {
                     <i className='bx bx-badge-check'></i>
 
                     <div>
-                        <h3 className="skills_name">Node</h3>
+                        <h3 className="skills_name">Bootstrap</h3>
                         <span className="skills_level">Intermediate</span>
                     </div>
                 </div>
@@ -40,4 +40,4 @@ function BackEnd() {
   )
 }
 
-export default BackEnd
+export default Frameworks
