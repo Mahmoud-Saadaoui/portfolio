@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 .project_card {
     width: 350px;
+    height: 200px;
     color: var(--container-color);
     font-family: 'Raleway', sans-serif;
     border-radius: 10px;
@@ -11,11 +12,12 @@
    
 .project_card img {
     width: 100%;
+    height: 100%;
     transition: all 0.3s ease-in-out;
 }
 
 .project_card:hover img {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .project_card:before {
@@ -59,7 +61,7 @@
     letter-spacing: 1px;
 }
 .project_card h3 {
-    text-transform: uppercase;
+    font-family: var(--body-font);
     font-weight: 400;
     margin-bottom: 5px;
     color: var(--container-color);
@@ -67,7 +69,7 @@
 }
 .project_card h5 {
     background-color: #ae895d;
-    padding: 3px 10px;
+    padding: var(--mb-1);
     cursor: pointer;
     margin: var(--mb-2);
 }
@@ -84,4 +86,41 @@
 }
 .btn {
     margin: var(--mb-2);
+}
+.portfolio {
+    position: relative;
+}
+
+/* modal */
+.project_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: var(--z-modal);
+}
+.project_modal-info {
+    max-width: 80%;
+    margin: 100px auto;
+    background-color: var(--container-color);
+    padding: var(--mb-3);
+}
+.project_modal-title {
+    text-align: center;
+}
+.project_modal-description {
+    text-align: center;
+    margin: var(--mb-2);
+}
+.project_modal-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.demo, .repo {
+    font-size: var;
+    font-size: var(--h3-font-size);
+    cursor: pointer;
 }

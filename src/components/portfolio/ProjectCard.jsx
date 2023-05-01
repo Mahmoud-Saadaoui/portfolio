@@ -1,15 +1,18 @@
 import React from 'react'
-import img from "../../assets/project-images/animated-navigation.JPG"
 
-function ProjectCard() {
+function ProjectCard({id ,title, img, showModal, modalIndex}) {
+  // console.log(modalIndex)
   return (
-    <div className="project_card">
+    <>
+      <div className="project_card">
         <img src={img} alt=''/>
         <div className="caption">
-    	    <h3>title</h3>
-    	    <h5>Show More</h5>
-	  </div>
-	</div>
+          <h3>{title}</h3>
+          <h5 onClick={()=>showModal(id)}>Show More</h5>
+        </div>
+      </div>
+      
+    </>
   )
 }
 
