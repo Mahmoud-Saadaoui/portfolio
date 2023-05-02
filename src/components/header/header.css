@@ -16,6 +16,7 @@
 .nav_logo, .nav_toggle {
     color: var(--tilte-color);
     font-weight: var(--font-medium);
+    cursor: pointer;
 }
 .nav_list {
     display: flex;
@@ -32,10 +33,15 @@
     color: var(--tilte-color);
     font-weight: var(--font-medium);
     transition: 0.3s;
+    cursor: pointer;
 }
 /* Active Link */
 .active-link, .nav_link:hover {
     color: var(--title-color-dark);
+}
+.active {
+    color: var(--title-color-dark);
+    border-bottom: 1px solid var(--title-color-dark);;
 }
 
 /* Responsive */

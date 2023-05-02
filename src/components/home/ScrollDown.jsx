@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 
 function ScrollDown() {
   return (
     <div className='home_scroll'>
-      <a href="#about" className="home_scroll-button button--flex">
+      <Link to="about" spy={true} smooth={true} offset={50} duration={300} className="home_scroll-button button--flex">
       <svg
             width="32px"
             height="32px"
@@ -42,7 +43,7 @@ function ScrollDown() {
         </svg>
         <span className='home_scroll-name'>Scroll Down</span>
         <i className='uil uil-arrow-down home_scroll-arrow'></i>
-      </a>
+      </Link>
     </div>
   )
 }

@@ -8,21 +8,20 @@ import Services from "./components/services/Services";
 import Skills from "./components/skills/Skills";
 import Portfolio from "./components/portfolio/Portfolio";
 
-
 function App() {
   return (
     <div className="App">
       <Header />
       <main className="main">
-        <Home/>
-        <About/>
+        <Home />
+        <About />
         <Skills />
         <Portfolio />
         <Services />
-        <Qualification/>
-        <Contact/>
+        <Qualification />
+        <Contact />
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

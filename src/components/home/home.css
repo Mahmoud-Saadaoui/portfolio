@@ -56,6 +56,9 @@
     box-shadow: inset 0 0 0 9px rgba(255 255 255 / 30%);
     animation: profile_animate 8s ease-in-out infinite 1s;
 }
+.home_scroll-button {
+    cursor: pointer;
+}
 @keyframes profile_animate {
     0% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
