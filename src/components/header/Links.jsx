@@ -23,18 +23,24 @@ function Links() {
         },
         {
             id: 3,
-            href: "services",
-            icon: <i className='uil uil-briefcase-alt nav_icon'></i>,
-            text: "Services"
-        },
-        {
-            id: 4,
             href: "portfolio",
             icon: <i className='uil uil-scenery nav_icon'></i>,
             text: "Portfolio"
         },
         {
+            id: 4,
+            href: "services",
+            icon: <i className='uil uil-briefcase-alt nav_icon'></i>,
+            text: "Services"
+        },
+        {
             id: 5,
+            href: "qualification",
+            icon: <i className='bx bx-certification nav_icon'></i>,
+            text: "Qualification"
+        },
+        {
+            id: 6,
             href: "contact",
             icon: <i className='uil uil-message nav_icon'></i>,
             text: "Contact"
@@ -46,7 +52,7 @@ function Links() {
         {
             links.map(link => (
                 <li className="nav_item" key={link.id}>
-                    <Link to={link.href} spy={true} smooth={true} offset={-20} duration={500} className='nav_link'>
+                    <Link to={link.href} spy={true} smooth={true} offset={-10} duration={500} className='nav_link'>
                         {link.icon}
                         {link.text}
                     </Link>

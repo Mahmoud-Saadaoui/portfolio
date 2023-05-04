@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
 import './header.css'
 import Links from './Links'
-import { Link } from 'react-scroll'
 
 function Header() {
     const [toggle, setToggle] = useState(false)
   return (
     <header className="header">
         <nav className="nav container">
-            <Link href="/" spy={true} smooth={true} offset={50} duration={300} className='nav_logo'>Forkan</Link>
+            <a href="#home" className='nav_logo'>Forkan</a>
             <div className={toggle ? "nav_menu show-menu" : "nav_menu"}>
                 <Links />
                 <i className="uil uil-times nav_close" onClick={()=>setToggle(!toggle)}></i>

@@ -38,10 +38,11 @@
 /* Active Link */
 .active-link, .nav_link:hover {
     color: var(--title-color-dark);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 .active {
     color: var(--title-color-dark);
-    border-bottom: 1px solid var(--title-color-dark);;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 /* Responsive */

@@ -72,6 +72,7 @@
 }
 .home_scroll {
     margin-left: 9.25rem;
+    margin-top: -55px;
 }
 .wheel {
     animation: scroll 2s ease infinite;

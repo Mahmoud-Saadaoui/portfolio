@@ -7,12 +7,12 @@ function ProjectModal({ title, description, demo, repo, setModal }) {
         <h2 className="project_modal-title">{title}</h2>
         <p className="project_modal-description">{description}</p>
         <div className="project_modal-links">
-          <div className="demo">
+          <a href={demo} className='demo' target='_blanck'>
             <i className="bx bx-link"></i>
-          </div>
-          <div className="repo">
+          </a>
+          <a href={repo} className='repo' target='_blanck'>
             <i className="bx bx-code-alt"></i>
-          </div>
+          </a>
         </div>
         <button className="button" onClick={() => setModal(false)}>
           close

@@ -1,7 +1,7 @@
 import React from 'react'
 
-function ProjectCard({id ,title, img, showModal, modalIndex}) {
-  // console.log(modalIndex)
+function ProjectCard({id ,title, img, showModal}) {
+  
   return (
     <>
       <div className="project_card">

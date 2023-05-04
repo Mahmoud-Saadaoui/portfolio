@@ -35,34 +35,6 @@ function Languages() {
                 </div>
             </div>
 
-            {/* <div className="skills_group">
-                <div className="skills_data">
-                    <i className='bx bx-badge-check'></i>
-
-                    <div>
-                        <h3 className="skills_name">Bootstrap</h3>
-                        <span className="skills_level">Intermediate</span>
-                    </div>
-                </div>
-
-                <div className="skills_data">
-                    <i className='bx bx-badge-check'></i>
-
-                    <div>
-                        <h3 className="skills_name">Git</h3>
-                        <span className="skills_level">Intermediate</span>
-                    </div>
-                </div>
-
-                <div className="skills_data">
-                    <i className='bx bx-badge-check'></i>
-
-                    <div>
-                        <h3 className="skills_name">React</h3>
-                        <span className="skills_level">Intermediate</span>
-                    </div>
-                </div>
-            </div> */}
         </div>
       
     </div>

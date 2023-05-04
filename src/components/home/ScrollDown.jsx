@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 function ScrollDown() {
   return (
     <div className='home_scroll'>
-      <Link to="about" spy={true} smooth={true} offset={50} duration={300} className="home_scroll-button button--flex">
+      <Link to="about" spy={true} smooth={true} offset={-50} duration={300} className="home_scroll-button button--flex">
       <svg
             width="32px"
             height="32px"
