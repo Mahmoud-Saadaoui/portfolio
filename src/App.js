@@ -8,6 +8,7 @@ import Services from "./components/services/Services";
 import Skills from "./components/skills/Skills";
 import Portfolio from "./components/portfolio/Portfolio";
 import Scroll from "./components/scroll/Scroll";
+import Timer from "./components/timer/Timer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Portfolio />
         <Services />
         <Qualification />
+        <Timer/>
         <Contact />
         <Scroll/>
       </main>

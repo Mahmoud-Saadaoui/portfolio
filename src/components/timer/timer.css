@@ -1,0 +1,10 @@
+.timer {
+    text-align: center;
+    background-color: var(--text-color);
+    padding: var(--mb-0-5);
+}
+.timer_info {
+    margin: var(--mb-1) auto;
+    color: var(--container-color);
+    font-size: var(--h2-font-size);
+}
