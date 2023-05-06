@@ -48,8 +48,7 @@
 /* Responsive */
 @media screen and (max-width: 768px) {
     .header {
-        top: initial;
-        bottom: 0;
+        top: 0;
     }
     .nav {
         justify-content: space-between;
@@ -80,9 +79,19 @@
         gap: 2rem;
     }
     .nav_icon,
-    .nav_close,
-    .nav_toggle {
+    .nav_close {
         display: block;
+    }
+    .nav_toggle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--body-color);
+        background-color: var(--text-color);
+        cursor: pointer;
     }
     .nav_icon {
         font-size: 1.2rem;
