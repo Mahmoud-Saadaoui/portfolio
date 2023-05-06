@@ -7,7 +7,9 @@ function Header() {
   return (
     <header className="header">
         <nav className="nav container">
-            <a href="#home" className='nav_logo'>Forkan</a>
+            {/* <a href="#home" className='nav_logo'>
+                <img src={logo} className='logo' alt='logo'/>
+            </a> */}
             <div className={toggle ? "nav_menu show-menu" : "nav_menu"}>
                 <Links />
                 <i className="uil uil-times nav_close" onClick={()=>setToggle(!toggle)}></i>

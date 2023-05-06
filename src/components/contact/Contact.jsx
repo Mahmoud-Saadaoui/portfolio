@@ -39,20 +39,17 @@ function Contact() {
             <div className="contact_info">
                 <ContactCard
                     cardTitle = 'Email'
-                    cardData = 'user@gmail.com'
-                    cardContact = 'mailto:examplemail@gmail.com.com'
+                    cardContact = 'contact@forkan.me'
                     cardIcon = 'bx bx-mail-send'
                 />
                 <ContactCard
                     cardTitle = 'Whatsapp'
-                    cardData = 'user@gmail.com'
-                    cardContact = 'mailto:examplemail@gmail.com.com'
+                    cardContact = "https://wa.me/21627987081"
                     cardIcon = 'bx bxl-whatsapp'
                 />
                 <ContactCard
                     cardTitle = 'Messenger'
-                    cardData = 'user.fb123'
-                    cardContact = 'https://m.me/crypticalcoder'
+                    cardContact = 'https://www.facebook.com/mhd.saadaoui/'
                     cardIcon = 'bx bxl-messenger'
                 />
             </div>

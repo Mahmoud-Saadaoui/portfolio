@@ -30,10 +30,6 @@
 .contact_card-title {
     font-weight: var(--font-medium);
 }
-.contact_card-data {
-    display: block;
-    margin-bottom: var(--mb-0-75);
-}
 .contact_button {
     color: var(--text-color);
     font-size: var(--small-font-size);
