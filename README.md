@@ -15,35 +15,54 @@ Il contient une page d'accueil, des styles personnalisés, des images, ainsi qu�
 
 ## 🐳 Utilisation avec Docker 
 
-```
 1️⃣ Créer une image Docker
+```
 docker build -t mon-portfolio .
+```
+
 2️⃣ Lancer un conteneur
+```
 docker run -d -p 8080:80 --name portfolio-container mon-portfolio
+```
+
 3️⃣ Publier l'image sur Docker Hub
+```
 docker tag mon-portfolio mahmoudsaadaoui/mon-portfolio:latest
 docker push mahmoudsaadaoui/mon-portfolio:latest
+```
+
 4️⃣ Récupérer l’image depuis Docker Hub
+```
 docker pull mahmoudsaadaoui/mon-portfolio:latest
 docker run -d -p 5000:80 --name portfolio mahmoudsaadaoui/mon-portfolio:latest
 ```
 
 ## 🔍 Commandes utiles Docker
-```
 Lister les images locales:
+```
 docker images
+```
 
 Lister tous les conteneurs (actifs ou stoppés):
+```
 docker ps -a
+```
 
 Entrer dans un conteneur / inspecter une image:
+```
 docker exec -it portfolio-container sh
 docker inspect mon-portfolio
+```
 
 Arrêter / supprimer un conteneur:
+```
 docker stop portfolio-container
 docker rm portfolio-container
 ```
+
+
+
+
 
 <!-- 
   01- creation d'un fichier Dockerfile
