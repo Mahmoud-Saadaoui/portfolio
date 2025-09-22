@@ -47,7 +47,10 @@ Lister tous les conteneurs (actifs ou stoppés):
 ```
 docker ps -a
 ```
-
+Afficher les conteneurs en cours d’exécution (running).
+```
+docker ps
+```
 Entrer dans un conteneur / inspecter une image:
 ```
 docker exec -it portfolio-container sh
