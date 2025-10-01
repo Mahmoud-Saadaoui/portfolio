@@ -56,12 +56,88 @@ Entrer dans un conteneur / inspecter une image:
 docker exec -it portfolio-container sh
 docker inspect mon-portfolio
 ```
-
 Arrêter / supprimer un conteneur:
 ```
 docker stop portfolio-container
 docker rm portfolio-container
 ```
+
+## 🚀 Étapes de Déploiement
+1. Connexion au VPS
+```
+ssh user@ip-du-vps
+```
+2. Cloner le dépôt Git dans le dossier /var/www/html
+```
+cd /var/www/html
+git clone <url-de-votre-repo>
+```
+_Remplace <url-de-votre-repo> par le lien GitHub/GitLab de ton projet._
+3. Vérifier le statut de Nginx
+```
+service nginx status
+```
+_Si Nginx n’est pas actif, démarre-le :_
+```
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
+4. Créer un fichier de configuration Nginx
+```
+cd /etc/nginx/sites-available
+sudo nano <le site a créer>
+```
+_Coller la configuration suivante (adapter le domaine et le dossier root) :_
+```
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name monportfolio.45.lebondeveloppeur.net;
+
+    root /var/www/html/<nom-du-repo-clone>;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+5. Activer la configuration du site
+```
+sudo ln -s /etc/nginx/sites-available/monportfolio.45.lebondeveloppeur.net /etc/nginx/sites-enabled
+
+```
+6. Tester la configuration Nginx
+```
+sudo nginx -t
+```
+_Résultat attendu :_
+```
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+```
+7. Recharger Nginx
+```
+sudo systemctl reload nginx
+```
+8. Activer HTTPS avec Certbot (Let’s Encrypt)
+* Installer certbot
+```
+sudo apt update
+sudo apt install certbot python3-certbot-nginx -y
+
+```
+* Générer et installer le certificat SSL :
+```
+sudo certbot --nginx
+
+```
+9. Accéder au site
+Une fois terminé, ton site est disponible en HTTPS sécurisé :
+👉 `https://monportfolio.45.lebondeveloppeur.net`
+
 
 
 
